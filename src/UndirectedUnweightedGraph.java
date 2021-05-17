@@ -1,4 +1,4 @@
-package graph;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -100,12 +100,8 @@ public static void main(String args[]) throws FileNotFoundException {
    UndirectedUnweightedGraph obj = new UndirectedUnweightedGraph();
 
    String ch = "y";
-   //Scanner sc= new Scanner(System.in);
-   // File file = new File("input.txt");
-   //Scanner sc = new Scanner(new FileReader("input.txt"));
    File file = new File("/Users/sacchitmittal/Documents/Summer-Project/src/input.txt");
    Scanner sc = new Scanner(file);
-   // Scanner sc = new Scanner(file);
    while (ch.equals("y"))
    {
       Vertex vertex = new Vertex();
@@ -144,28 +140,3 @@ public static void main(String args[]) throws FileNotFoundException {
 }
 }
  
-   /**
-    * Get an ArrayList of the data contained in all vertices adjacent to the vertex that
-    * contains the data passed in. Returns an ArrayList of zero length if no adjacencies exist in the graph.
-    * Throws Exception if a vertex containing the data passed in does not exist.
-   */   
-//    public void findConnectionsLanguage(Vertex start){ 
-//       String language = start.getLanguage(); 
-//       queue.add(language);
-//       while(!queue.isEmpty()){
-//          String currentVertexLanguage = queue.remove();
-//          index1 = getVertexIndexLanguage(currentVertexLanguage); 
-//          Vertex currentVertex = new Vertex();
-//          currentVertex.setLang(language);
-//          currentVertex.setVisited(true); 
-//          ArrayList<String> neighbors = getAdjacentLanguageData(currentVertexLanguage);
-//          for (int i = 0; i < neighbors.size(); i++){
-//             if(!currentVertex.isVisited()){
-//                currentVertex.setVisited(true);
-//                //System.out.println("You can also link with" + neighbors.get(i));
-//                queue.add(neighbors.get(i));
-//            }
-//          }
-//       }
-//    }
-// }
